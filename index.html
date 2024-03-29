@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Address Updater</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-******" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="typewriter">Address Updater</h1>
+    <form id="addressForm">
+      ADDRESS: <input type="text" id="Address1" placeholder="Address line 1 *" required>
+      <input type="text" id="Address2" placeholder="Address line 2">
+      CITY: <input type="text" id="city" placeholder="City *" required>
+      STATE: <input type="text" id="state" placeholder="State *" required *>
+      ZIP CODE: <input type="text" id="zipCode" placeholder="Zip Code *" required>
+      <br> <button type="submit">Add +</button>
+    </form>
+    <br>
+    <br>
+  </div>
+  <div class="container2">
+    <button id="deleteAllBtn">Delete All</button>
+    <br>
+    <br>
+    <div id="addressList"></div>
+  </div>
+  <button id="scrollTopBtn" title="Scroll to Top"><i class="fas fa-arrow-up"></i></button>
+  <div id="dialogBox">
+    <span class="addedText">Added!</span>
+    <div class="dialogContent">
+      <i class="fas fa-check"></i>
+    </div>
+  </div>
+  <script src="script.js "></script>
+</body>
+
+</html>
+
+

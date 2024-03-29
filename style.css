@@ -1,0 +1,229 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(17, 15, 31);
+  margin: 0;
+  padding: 0;
+}
+
+.required {
+  color: red;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.container2 {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.container, .container2 {
+  background-color: #110f1f; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: typewriter 5s steps(30) infinite alternate; 
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 57%; 
+  }
+}
+/* form */
+form{
+  color: white;
+}
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: green;
+  transition: background-color 0.3s ease;
+}
+
+.edit:hover{
+  background-color: rgb(152, 152, 38);
+  transition: background-color 0.3s ease;
+}
+.del:hover{
+  background-color: rgb(160, 11, 11);
+  transition: background-color 0.3s ease;
+}
+
+#deleteAllBtn:hover{
+  background-color: red;
+}
+/* Table */
+
+table {
+width: 100%;
+border-collapse: collapse;
+border: 2px solid white; 
+color: white;
+border-radius: 10px;
+overflow: hidden;
+background-color: rgb(32, 30, 49);
+}
+
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid white; 
+min-height: 50px; 
+vertical-align: top; 
+}
+
+th {
+background-color: orangered;
+color: #fff;
+}
+
+tr:hover {
+background-color: #312a2a;
+transition: background-color 0.3s ease;
+}
+
+td.action {
+width: 200px; 
+}
+
+/* scroll button */
+#scrollTopBtn {
+display: none; 
+position: fixed;
+height: 50px;
+width: 50px;
+bottom: 20px;
+right: 20px;
+background-color: #394450;
+color: #fff;
+border: none;
+border-radius: 50%; 
+padding: 10px;
+cursor: pointer;
+z-index: 99; 
+}
+
+#scrollTopBtn:hover {
+background-color: #0056b3;
+}
+
+#scrollTopBtn i {
+font-size: 20px;
+}
+
+/* dialogbox */
+#dialogBox {
+  height: 150px;
+  width: 200px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  text-align: center; 
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+.dialogContent {
+  display: inline-block;
+  background-color: green; 
+  border-radius: 50%; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.addedText {
+  padding: 5px;
+  display: block;
+  margin-top: 10px; 
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(0, 0, 0); 
+}
+
+
+#dialogBox i {
+  font-size: 60px;
+  color: white;
+  opacity: 0;
+  animation: slideInIcon 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInText {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInIcon {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
